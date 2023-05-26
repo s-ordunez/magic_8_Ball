@@ -2,7 +2,7 @@ from tkinter import *
 from PIL import ImageTk, Image
 import random
 
-file_path = 'C:/Users/Samuel Ordunez/Desktop/Python/Practice projects/8Ball/'
+file_path = ###enter file path as a string here to connect images###
 answers = {'1':'It is certain.', '2':'It is decidedly so.', 
 '3':'Without a doubt.', '4':'Yes, Definitely', '5':'You may rely on it.',
 '6':'As I see it, yes.','7': 'Most Likely.', '8':'Outlook good.',
@@ -31,7 +31,7 @@ def create_frame(master):
     
     master.geometry('700x700')
     master.title('Ask the Magic 8 Ball!')
-    master.iconbitmap(file_path + 'eightball.ico')
+    master.iconbitmap(file_path + '/eightball.ico')
     
     
     bg_image = Label(frame, image = magic8Ball)
@@ -55,7 +55,7 @@ def reset_all():
 master = Tk()
 
 magic8Ball = ImageTk.PhotoImage(Image.open(file_path +
-                                            'Magic8BallMain.png'))
+                                            '/Magic8BallMain.png'))
 
 frame = create_frame(master)
 frame.pack()
